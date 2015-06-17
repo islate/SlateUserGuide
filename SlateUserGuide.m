@@ -95,11 +95,11 @@
             _guideScrollView.showsHorizontalScrollIndicator = NO;
             _guideScrollView.bounces = NO;
             
-            int count = [_imageArray count];
+            NSUInteger count = [_imageArray count];
             
             _guideScrollView.contentSize = CGSizeMake(windowSize.width * (count + 1), windowSize.height);
             
-            for (int i = 0; i < count; i ++) {
+            for (NSUInteger i = 0; i < count; i ++) {
                 //逐个添加image
                 UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(windowSize.width * i, 0, windowSize.width, windowSize.height)];
                 
